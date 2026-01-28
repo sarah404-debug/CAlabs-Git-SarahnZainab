@@ -2,10 +2,8 @@
 .globl main
 
 main:
-    # --------Initialize Base Address------------
-    li x25, 0x400        # base address of save[]
+    li x25, 0x400        # base address
 
-    # --------Initialize Array save[]------------
     li x5, 2
     sw x5, 0(x25)        # save[0] = 2
     li x5, 2
@@ -15,7 +13,6 @@ main:
     li x5, 2
     sw x5, 12(x25)       # save[3] = 2
 
-    # --------Initialize Variables------------
     li x22, 0            # i = 0
     li x24, 2            # k = 2
 
