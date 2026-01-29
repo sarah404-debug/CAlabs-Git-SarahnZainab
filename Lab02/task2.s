@@ -5,7 +5,7 @@ main:
     # initialize variables
     li x22, 10          # b = 10
     li x23, 4           # c = 4
-    li x20, 1           # x = 1 (selector)
+    li x20, 5           # x = 1 (selector)
 
     li t0, 1           
     beq x20, t0, case1  # if x == 1, jump to case1
