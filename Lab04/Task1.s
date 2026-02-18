@@ -5,7 +5,7 @@ main:
     li   x10, 5          # n = 5
     jal  x1, fact_iter   # call factorial
 
-    # Print Result logic
+    #print Result logic
     addi x11, x10, 0     
     li   x10, 1       
     ecall 
@@ -25,3 +25,20 @@ loop:
 done:
     addi x10, x5, 0      
     ret             
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    

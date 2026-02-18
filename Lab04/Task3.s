@@ -1,71 +1,69 @@
-
 .text
 .globl main
 
 main:
-
-    li x10, 0x100        
+    li x10, 0x100       
     
     li x5, 1
-    sw x5, 0(x10)        
+    sw x5, 0(x10)        # v[0] = 1
     li x5, 2
-    sw x5, 4(x10)        
+    sw x5, 4(x10)        # v[1] = 2
     li x5, 4
-    sw x5, 8(x10)       
+    sw x5, 8(x10)        # v[2] = 4
     li x5, 3
-    sw x5, 12(x10)       
+    sw x5, 12(x10)       # v[3] = 3
     li x5, 5
-    sw x5, 16(x10)       
+    sw x5, 16(x10)       # v[4] = 5
     li x5, 6
-    sw x5, 20(x10)     
+    sw x5, 20(x10)       # v[5] = 6
 
-  
-    li x11, 6            
+    li x11, 6            # len = 6 elements
 
-    jal x1, bubble       
+    jal x1, bubble      
 
-  
     li a7, 10
 
 
-bubble:
 
-    beq  x10, x0, exit     
+bubble:
+    #initial check: if (a == NULL || len == 0) return
+    beq  x10, x0, exit       
     beq  x11, x0, exit       
 
-    li   x5, 0              
+    li   x5, 0           
 
 outer_loop:
     bge  x5, x11, exit       
-    mv   x6, x5              
+
+    addi x6, x5, 0           # j = i (inner loop counter)
 
 inner_loop:
-    bge  x6, x11, next_i    
+    bge  x6, x11, next_i     
 
-    
-    slli x7, x5, 2           # x7 = i * 4
-    add  x7, x10, x7         # x7 = &a[i]
-    lw   x28, 0(x7)          # x28 = a[i]
+    #calculate address of a[i]
+    slli x7, x5, 2           
+    add  x7, x10, x7         
+    lw   x28, 0(x7)          
 
-   
-    slli x8, x6, 2           # x8 = j * 4
-    add  x8, x10, x8         # x8 = &a[j]
-    lw   x29, 0(x8)          # x29 = a[j]
+    #calculate address of a[j]
+    slli x8, x6, 2           
+    add  x8, x10, x8         
+    lw   x29, 0(x8)          
 
-    # If (a[i] < a[j]), then swap (Descending Order)
-    bge  x28, x29, next_j    # if a[i] >= a[j], skip swap
+    # iif (a[i] < a[j]), then swap (descending Order)
+    bge  x28, x29, next_j    
 
-    # Perform swap
-    sw   x29, 0(x7)          # a[i] = old a[j]
+    # swapping
+    sw   x29, 0(x7)          
     sw   x28, 0(x8)          
 
 next_j:
-    addi x6, x6, 1        
+    addi x6, x6, 1           
     j    inner_loop
 
 next_i:
-    addi x5, x5, 1         
+    addi x5, x5, 1           
     j    outer_loop
 
 exit:
-    ret                    
+    ret

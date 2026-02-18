@@ -2,43 +2,39 @@
 .globl main
 
 main:
-    li x10, 4         
-    jal x1, ntri       
+    li x10, 4          # n = 4
+    jal x1, ntri       # call function
 
-    addi x11, x10, 0     
-    addi x10, x0, 1     
+    addi x11, x10, 0   # move result to x11 for printing
+
+    li x10, 1          # print integer
     ecall
 
 end:
-
-    jal x0, end   
+    j end
 
 ntri:
+    addi x2, x2, -8      # allocate stack
+    sw x1, 4(x2)         # save return address
+    sw x10, 0(x2)        # save original n
 
-    addi x2, x2, -8     
+    li x5, 1
+    ble x10, x5, base_case   # if (n <= 1)
 
-    sw x1, 4(x2)        
-    sw x10, 0(x2)      
+    addi x10, x10, -1    # n = n - 1
+    jal x1, ntri         # recursive call
 
-    addi x5, x0, 1
-    bge x5, x10, base_case  
+    lw x6, 0(x2)         # restore original n
+    add x10, x10, x6     # ntri(n-1) + n
 
-    addi x10, x10, -1       
-    jal x1, ntri            
+    lw x1, 4(x2)         #restore return address
+    addi x2, x2, 8       #deallocate stack
+    jalr x0, 0(x1)      
 
-    lw x6, 0(x2)         
-    add x10, x10, x6       
-
-    lw x1, 4(x2)           
-    addi x2, x2, 8          
-    jalr x0, 0(x1)     
 
 base_case:
+    li x10, 1          
 
-    addi x10, x0, 1         
-    lw x1, 4(x2)           
-
-    addi x2, x2, 8          
-
+    lw x1, 4(x2)
+    addi x2, x2, 8
     jalr x0, 0(x1)
-
