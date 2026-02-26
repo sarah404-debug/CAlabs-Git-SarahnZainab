@@ -3,9 +3,9 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date: 02/19/2026 10:25:58 AM
+// Create Date: 02/19/2026 11:24:45 AM
 // Design Name: 
-// Module Name: top
+// Module Name: debouncer
 // Project Name: 
 // Target Devices: 
 // Tool Versions: 
@@ -19,27 +19,22 @@
 // 
 //////////////////////////////////////////////////////////////////////////////////
 
-module top(
+module debouncer(
     input clk,
-    input rst,
-    input [15:0] switches,
-    input button,
-    output [15:0] leds
+    input pbin,
+    output reg pbout
 );
 
-    wire clean_button;
+    reg [2:0] history;
 
-    debouncer db(
-        .clk(clk),
-        .pbin(button),
-        .pbout(clean_button)
-    );
+    always @(posedge clk) begin
+        history <= {history[1:0], pbin};
 
-    countdown_fsm fsm_inst(
-        .clk(clk),
-        .rst(rst),
-        .switch_in(switches),
-        .led_out(leds)
-    );
+        // output changes only when input stable for 3 cycles
+        if (&history)          // all 1s
+            pbout <= 1'b1;
+        else if (~|history)    // all 0s
+            pbout <= 1'b0;
+    end
 
 endmodule

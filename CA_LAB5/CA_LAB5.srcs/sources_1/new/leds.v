@@ -3,9 +3,9 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date: 02/19/2026 10:25:58 AM
+// Create Date: 02/19/2026 11:23:59 AM
 // Design Name: 
-// Module Name: top
+// Module Name: leds
 // Project Name: 
 // Target Devices: 
 // Tool Versions: 
@@ -19,27 +19,23 @@
 // 
 //////////////////////////////////////////////////////////////////////////////////
 
-module top(
+module leds(
     input clk,
     input rst,
+    input [15:0] btns,
+    input [31:0] writeData,
+    input writeEnable,
+    input readEnable,
+    input [29:0] memAddress,
     input [15:0] switches,
-    input button,
-    output [15:0] leds
+    output reg [31:0] readData
 );
 
-    wire clean_button;
-
-    debouncer db(
-        .clk(clk),
-        .pbin(button),
-        .pbout(clean_button)
-    );
-
-    countdown_fsm fsm_inst(
-        .clk(clk),
-        .rst(rst),
-        .switch_in(switches),
-        .led_out(leds)
-    );
+    always @(posedge clk) begin
+        if (rst)
+            readData <= 32'd0;
+        else if (readEnable)
+            readData <= {16'd0, switches};
+    end
 
 endmodule

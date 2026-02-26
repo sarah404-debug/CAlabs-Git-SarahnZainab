@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Wed Feb 25 11:20:56 2026
+# Process ID: 6028
+# Current directory: C:/Users/Administrator/Desktop/Ca Lab/CAlabs-Git-SarahnZainab/CA_LAB5/CA_LAB5.sim/sim_1/behav/xsim
+# Command line: wbtcv.exe -mode batch -source C:/Users/Administrator/Desktop/Ca Lab/CAlabs-Git-SarahnZainab/CA_LAB5/CA_LAB5.sim/sim_1/behav/xsim/xsim.dir/tb_countdown_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: C:/Users/Administrator/Desktop/Ca Lab/CAlabs-Git-SarahnZainab/CA_LAB5/CA_LAB5.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: C:/Users/Administrator/Desktop/Ca Lab/CAlabs-Git-SarahnZainab/CA_LAB5/CA_LAB5.sim/sim_1/behav/xsim\webtalk.jou
+#-----------------------------------------------------------
+source C:/Users/Administrator/Desktop/Ca -notrace
