@@ -1,20 +1,25 @@
-`timescale 1ns / 1ps
-
-module debouncer(
+`timescale 1ns/1ps
+module debouncer #(parameter THRESHOLD = 17'd100_000)(
     input clk,
     input pbin,
-    output reg pbout
+    output reg pbout = 0
 );
-
-    reg [2:0] shift = 3'b000;
-
+    reg [16:0] count = 0;  // ADD = 0 HERE
     always @(posedge clk) begin
-        shift <= {shift[1:0], pbin};
-
-        if (shift == 3'b111)
-            pbout <= 1'b1;
-        else if (shift == 3'b000)
-            pbout <= 1'b0;
+        if (pbin == pbout) count <= 0;
+        else begin
+            count <= count + 1;
+            if (count == THRESHOLD) pbout <= pbin;
+        end
     end
-
 endmodule
+
+
+
+
+
+
+
+
+
+

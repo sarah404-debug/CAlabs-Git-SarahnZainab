@@ -1,4 +1,4 @@
-`timescale 1ns / 1ps
+`timescale 1ns/1ps
 
 module switches(
     input clk,
@@ -8,14 +8,13 @@ module switches(
     input readEnable,
     input [29:0] memAddress,
     output reg [31:0] readData = 0,
-    output reg [15:0] leds = 0
+    output reg [15:0] leds // This is the signal for the FSM
 );
-
     always @(posedge clk or posedge rst) begin
-        if (rst)
-            leds <= 0;
-        else if (writeEnable)
-            leds <= writeData[15:0];
+        if (rst) leds <= 16'b0;
+        else leds <= writeData[15:0]; // Direct latch of switch state
     end
-
 endmodule
+
+
+
