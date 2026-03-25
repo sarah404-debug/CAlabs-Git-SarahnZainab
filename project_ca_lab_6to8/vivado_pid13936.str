@@ -1,0 +1,147 @@
+/*
+
+Xilinx Vivado v2020.1 (64-bit) [Major: 2020, Minor: 1]
+SW Build: 2902540 on Wed May 27 19:54:49 MDT 2020
+IP Build: 2902112 on Wed May 27 22:43:36 MDT 2020
+
+Process ID (PID): 13936
+License: Customer
+
+Current time: 	Thu Mar 12 11:30:46 PKT 2026
+Time zone: 	Pakistan Standard Time (Asia/Karachi)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 4
+
+Screen size: 1920x1080
+Screen resolution (DPI): 150
+Available screens: 1
+Default font: family=Segoe UI,name=Segoe UI,style=plain,size=18
+
+Java version: 	9.0.4 64-bit
+Java home: 	C:/Xilinx/Vivado/2020.1/tps/win64/jre9.0.4
+Java executable location: 	C:/Xilinx/Vivado/2020.1/tps/win64/jre9.0.4/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	Administrator
+User home directory: C:/Users/Administrator
+User working directory: C:/Users/Administrator/Desktop/Ca Lab/project_ca_lab_6
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2020.1
+RDI_DATADIR: C:/Xilinx/Vivado/2020.1/data
+RDI_BINDIR: C:/Xilinx/Vivado/2020.1/bin
+
+Vivado preferences file location: C:/Users/Administrator/AppData/Roaming/Xilinx/Vivado/2020.1/vivado.xml
+Vivado preferences directory: C:/Users/Administrator/AppData/Roaming/Xilinx/Vivado/2020.1/
+Vivado layouts directory: C:/Users/Administrator/AppData/Roaming/Xilinx/Vivado/2020.1/data/layouts
+PlanAhead jar file location: 	C:/Xilinx/Vivado/2020.1/lib/classes/planAhead.jar
+Vivado log file location: 	C:/Users/Administrator/Desktop/Ca Lab/project_ca_lab_6/vivado.log
+Vivado journal file location: 	C:/Users/Administrator/Desktop/Ca Lab/project_ca_lab_6/vivado.jou
+Engine tmp dir: 	C:/Users/Administrator/Desktop/Ca Lab/project_ca_lab_6/.Xil/Vivado-13936-DESKTOP-BO7RKUV
+
+Xilinx Environment Variables
+----------------------------
+XILINX: C:/Xilinx/Vivado/2020.1/ids_lite/ISE
+XILINX_DSP: C:/Xilinx/Vivado/2020.1/ids_lite/ISE
+XILINX_PLANAHEAD: C:/Xilinx/Vivado/2020.1
+XILINX_VIVADO: C:/Xilinx/Vivado/2020.1
+XILINX_VIVADO_HLS: C:/Xilinx/Vivado/2020.1
+
+
+GUI allocated memory:	154 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 1,014 MB
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// bz (cs):  Open Project : addNotify
+// Opening Vivado Project: C:\Users\Administrator\Desktop\Ca Lab\project_ca_lab_6\project_ca_lab_6.xpr. Version: Vivado v2020.1 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project {C:/Users/Administrator/Desktop/Ca Lab/project_ca_lab_6/project_ca_lab_6.xpr} 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project {C:/Users/Administrator/Desktop/Ca Lab/project_ca_lab_6/project_ca_lab_6.xpr} 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,014 MB. GUI used memory: 58 MB. Current time: 3/12/26, 11:30:48 AM PKT
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 79 MB (+80017kb) [00:00:20]
+// [Engine Memory]: 1,014 MB (+911538kb) [00:00:20]
+// [GUI Memory]: 94 MB (+12104kb) [00:00:20]
+// [GUI Memory]: 116 MB (+17578kb) [00:00:21]
+// WARNING: HEventQueue.dispatchEvent() is taking  6193 ms.
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.1/data/ip'. 
+// Tcl Message: open_project: Time (s): cpu = 00:00:22 ; elapsed = 00:00:11 . Memory (MB): peak = 1024.746 ; gain = 0.000 
+// Project name: project_ca_lab_6; location: C:/Users/Administrator/Desktop/Ca Lab/project_ca_lab_6; part: xc7a35tcpg236-1
+dismissDialog("Open Project"); // bz (cs)
+// Tcl Command: 'rdi::info_commands {device::*}'
+// Tcl Command: 'rdi::info_commands {debug::*}'
+// Tcl Command: 'rdi::info_commands {*}'
+// Tcl Message: update_compile_order -fileset sources_1 
+// [GUI Memory]: 125 MB (+4119kb) [00:04:00]
+// WARNING: HEventQueue.dispatchEvent() is taking  615763 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 2595 ms. Increasing delay to 3000 ms.
+// [GUI Memory]: 137 MB (+5518kb) [00:19:55]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,014 MB. GUI used memory: 78 MB. Current time: 3/12/26, 12:00:52 PM PKT
+// WARNING: HEventQueue.dispatchEvent() is taking  1098 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 1321 ms. Increasing delay to 3963 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,014 MB. GUI used memory: 69 MB. Current time: 3/12/26, 12:30:53 PM PKT
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 247483 ms. Increasing delay to 742449 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,014 MB. GUI used memory: 69 MB. Current time: 3/12/26, 1:00:56 PM PKT
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 12 ms. Decreasing delay to 2012 ms.
+// RDIResource.RDIViews_PROPERTIES: Properties: close view
+// Elapsed time: 6478 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 5); // B (F, cs)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1]", 6); // B (F, cs)
+// PAPropertyPanels.initPanels (MemorySystem_tb.v) elapsed time: 0.2s
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, MemorySystem_tb (MemorySystem_tb.v)]", 7, true); // B (F, cs) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, MemorySystem_tb (MemorySystem_tb.v)]", 7, true, false, false, false, false, true); // B (F, cs) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, MemorySystem_tb (MemorySystem_tb.v)]", 7, true); // B (F, cs) - Node
+selectCodeEditor("MemorySystem_tb.v", 224, 168); // bP (w, cs)
+typeControlKey((HResource) null, "MemorySystem_tb.v", 'c'); // bP (w, cs)
+// Elapsed time: 16 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, memorySystemFPGA (memorySystemFPGA.v)]", 1); // B (F, cs)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, memorySystemFPGA (memorySystemFPGA.v)]", 1, true); // B (F, cs) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, memorySystemFPGA (memorySystemFPGA.v)]", 1, true, false, false, false, false, true); // B (F, cs) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, memorySystemFPGA (memorySystemFPGA.v)]", 1, true); // B (F, cs) - Node
+selectCodeEditor("memorySystemFPGA.v", 418, 108); // bP (w, cs)
+typeControlKey((HResource) null, "memorySystemFPGA.v", 'c'); // bP (w, cs)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, memorySystemFPGA (memorySystemFPGA.v)]", 1); // B (F, cs)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, memorySystemFPGA (memorySystemFPGA.v), system : addressDecoderTop (addressDecoderTop.v)]", 2, true); // B (F, cs) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, memorySystemFPGA (memorySystemFPGA.v), system : addressDecoderTop (addressDecoderTop.v)]", 2, true, false, false, false, false, true); // B (F, cs) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, memorySystemFPGA (memorySystemFPGA.v), system : addressDecoderTop (addressDecoderTop.v)]", 2, true); // B (F, cs) - Node
+selectCodeEditor("addressDecoderTop.v", 399, 145); // bP (w, cs)
+typeControlKey((HResource) null, "addressDecoderTop.v", 'c'); // bP (w, cs)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,014 MB. GUI used memory: 73 MB. Current time: 3/12/26, 1:30:56 PM PKT
