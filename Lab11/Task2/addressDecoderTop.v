@@ -1,4 +1,5 @@
 `timescale 1ns/1ps
+
 module addressDecoderTop(
     input clk,
     input rst,
@@ -17,6 +18,8 @@ wire [8:0] localAddress;
 
 assign localAddress = address[8:0];
 
+
+// ================= DECODER =================
 addressDecoder decoder(
     .deviceSel(address[9:8]),
     .writeEnable(writeEnable),
@@ -27,6 +30,8 @@ addressDecoder decoder(
     .SwitchRead(SwitchRead)
 );
 
+
+// ================= DATA MEMORY =================
 dataMemory mem(
     .clk(clk),
     .MemWrite(DataMemWrite),
@@ -35,6 +40,8 @@ dataMemory mem(
     .readData(memReadData)
 );
 
+
+// ================= LED =================
 leds ledModule(
     .clk(clk),
     .rst(rst),
@@ -46,6 +53,8 @@ leds ledModule(
     .leds(leds)
 );
 
+
+// ================= SWITCH =================
 switches switchModule(
     .clk(clk),
     .rst(rst),
@@ -58,16 +67,16 @@ switches switchModule(
     .readData(switchReadData)
 );
 
+
+// ================= ? FINAL FIX =================
+// IMPORTANT: guard EVERYTHING with readEnable
+
 assign readData =
-    (address[9:8] == 2'b00) ? memReadData :
-    (address[9:8] == 2'b10) ? switchReadData :
+    (readEnable && (address[9:8] == 2'b00)) ? memReadData :
+    (readEnable && (address[9:8] == 2'b10)) ? switchReadData :
     32'b0;
 
 endmodule
-
-
-
-
 
 
 
