@@ -1,0 +1,26 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../calab11finalthing.srcs/sources_1/new/ALU.v" \
+"../../../../calab11finalthing.srcs/sources_1/new/ALUControl.v" \
+"../../../../calab11finalthing.srcs/sources_1/new/MainControl.v" \
+"../../../../calab11finalthing.srcs/sources_1/new/ProgramCounter.v" \
+"../../../../calab11finalthing.srcs/sources_1/new/RegisterFile.v" \
+"../../../../calab11finalthing.srcs/sources_1/new/TopLevelProcessor.v" \
+"../../../../calab11finalthing.srcs/sources_1/new/addressDecoder.v" \
+"../../../../calab11finalthing.srcs/sources_1/new/addressDecoderTop.v" \
+"../../../../calab11finalthing.srcs/sources_1/new/branchAdder.v" \
+"../../../../calab11finalthing.srcs/sources_1/new/control_top.v" \
+"../../../../calab11finalthing.srcs/sources_1/new/dataMemory.v" \
+"../../../../calab11finalthing.srcs/sources_1/new/immGen.v" \
+"../../../../calab11finalthing.srcs/sources_1/new/instructionMemory.v" \
+"../../../../calab11finalthing.srcs/sources_1/new/leds.v" \
+"../../../../calab11finalthing.srcs/sources_1/new/mux2.v" \
+"../../../../calab11finalthing.srcs/sources_1/new/pcAdder.v" \
+"../../../../calab11finalthing.srcs/sources_1/new/switches.v" \
+"../../../../calab11finalthing.srcs/sim_1/new/tb_task2.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
