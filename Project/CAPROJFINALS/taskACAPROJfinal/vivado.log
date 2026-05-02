@@ -1,0 +1,181 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Sat May  2 23:52:48 2026
+# Process ID: 21784
+# Current directory: C:/Users/Administrator/Desktop/CAPROJFINALS/taskACAPROJfinal
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent20504 C:\Users\Administrator\Desktop\CAPROJFINALS\taskACAPROJfinal\taskACAPROJfinal.xpr
+# Log file: C:/Users/Administrator/Desktop/CAPROJFINALS/taskACAPROJfinal/vivado.log
+# Journal file: C:/Users/Administrator/Desktop/CAPROJFINALS/taskACAPROJfinal\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Administrator/Desktop/CAPROJFINALS/taskACAPROJfinal/taskACAPROJfinal.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.1/data/ip'.
+open_project: Time (s): cpu = 00:00:28 ; elapsed = 00:00:12 . Memory (MB): peak = 1027.078 ; gain = 0.000
+update_compile_order -fileset sources_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Administrator/Desktop/CAPROJFINALS/taskACAPROJfinal/taskACAPROJfinal.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_task2' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/Administrator/Desktop/CAPROJFINALS/taskACAPROJfinal/taskACAPROJfinal.sim/sim_1/behav/xsim/prog.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Administrator/Desktop/CAPROJFINALS/taskACAPROJfinal/taskACAPROJfinal.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_task2_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Desktop/CAPROJFINALS/taskACAPROJfinal/taskACAPROJfinal.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Desktop/CAPROJFINALS/taskACAPROJfinal/taskACAPROJfinal.srcs/sources_1/new/ALUControl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALUControl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Desktop/CAPROJFINALS/taskACAPROJfinal/taskACAPROJfinal.srcs/sources_1/new/MainControl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MainControl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Desktop/CAPROJFINALS/taskACAPROJfinal/taskACAPROJfinal.srcs/sources_1/new/ProgramCounter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ProgramCounter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Desktop/CAPROJFINALS/taskACAPROJfinal/taskACAPROJfinal.srcs/sources_1/new/RegisterFile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegisterFile
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Desktop/CAPROJFINALS/taskACAPROJfinal/taskACAPROJfinal.srcs/sources_1/new/TopLevelProcessor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TopLevelProcessor
+WARNING: [VRFC 10-3380] identifier 'PCSrc' is used before its declaration [C:/Users/Administrator/Desktop/CAPROJFINALS/taskACAPROJfinal/taskACAPROJfinal.srcs/sources_1/new/TopLevelProcessor.v:294]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Desktop/CAPROJFINALS/taskACAPROJfinal/taskACAPROJfinal.srcs/sources_1/new/addressDecoderTop.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module addressDecoderTop
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Desktop/CAPROJFINALS/taskACAPROJfinal/taskACAPROJfinal.srcs/sources_1/new/bin2bcd.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bin2bcd
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Desktop/CAPROJFINALS/taskACAPROJfinal/taskACAPROJfinal.srcs/sources_1/new/branchAdder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module branchAdder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Desktop/CAPROJFINALS/taskACAPROJfinal/taskACAPROJfinal.srcs/sources_1/new/clk_divider.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_divider
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Desktop/CAPROJFINALS/taskACAPROJfinal/taskACAPROJfinal.srcs/sources_1/new/control_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module control_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Desktop/CAPROJFINALS/taskACAPROJfinal/taskACAPROJfinal.srcs/sources_1/new/dataMemory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dataMemory
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Desktop/CAPROJFINALS/taskACAPROJfinal/taskACAPROJfinal.srcs/sources_1/new/immGen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module immGen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Desktop/CAPROJFINALS/taskACAPROJfinal/taskACAPROJfinal.srcs/sources_1/new/instructionMemory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module instructionMemory
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Desktop/CAPROJFINALS/taskACAPROJfinal/taskACAPROJfinal.srcs/sources_1/new/mux2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux2
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Desktop/CAPROJFINALS/taskACAPROJfinal/taskACAPROJfinal.srcs/sources_1/new/pcAdder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pcAdder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Desktop/CAPROJFINALS/taskACAPROJfinal/taskACAPROJfinal.srcs/sources_1/new/sevenSegDriver.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sevenSegDriver
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Desktop/CAPROJFINALS/taskACAPROJfinal/taskACAPROJfinal.srcs/sim_1/new/tb_task2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_task2
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Desktop/CAPROJFINALS/taskACAPROJfinal/taskACAPROJfinal.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 1027.078 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '6' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Administrator/Desktop/CAPROJFINALS/taskACAPROJfinal/taskACAPROJfinal.sim/sim_1/behav/xsim'
+"xelab -wto 4e041132423d4e0f840053b5075b9e10 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_task2_behav xil_defaultlib.tb_task2 xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto 4e041132423d4e0f840053b5075b9e10 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_task2_behav xil_defaultlib.tb_task2 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.clk_divider
+Compiling module xil_defaultlib.ProgramCounter
+Compiling module xil_defaultlib.pcAdder
+Compiling module xil_defaultlib.instructionMemory
+Compiling module xil_defaultlib.MainControl
+Compiling module xil_defaultlib.ALUControl
+Compiling module xil_defaultlib.control_top
+Compiling module xil_defaultlib.immGen
+Compiling module xil_defaultlib.RegisterFile
+Compiling module xil_defaultlib.mux2
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.dataMemory
+Compiling module xil_defaultlib.addressDecoderTop
+Compiling module xil_defaultlib.branchAdder
+Compiling module xil_defaultlib.bin2bcd
+Compiling module xil_defaultlib.sevenSegDriver
+Compiling module xil_defaultlib.TopLevelProcessor
+Compiling module xil_defaultlib.tb_task2
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_task2_behav
+
+****** Webtalk v2020.1 (64-bit)
+  **** SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+  **** IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/Administrator/Desktop/CAPROJFINALS/taskACAPROJfinal/taskACAPROJfinal.sim/sim_1/behav/xsim/xsim.dir/tb_task2_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Sat May  2 23:54:11 2026...
+run_program: Time (s): cpu = 00:00:02 ; elapsed = 00:00:19 . Memory (MB): peak = 1027.078 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '19' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Administrator/Desktop/CAPROJFINALS/taskACAPROJfinal/taskACAPROJfinal.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_task2_behav -key {Behavioral:sim_1:Functional:tb_task2} -tclbatch {tb_task2.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+source tb_task2.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Time	PC		Instr		LEDs	Switch
+0	xxxxxxxx	xxxxxxxx	xxxx	0005
+5000	00000000	10000113	0000	0005
+xsim: Time (s): cpu = 00:00:16 ; elapsed = 00:00:10 . Memory (MB): peak = 1027.078 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_task2_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:24 ; elapsed = 00:00:38 . Memory (MB): peak = 1027.078 ; gain = 0.000
+current_wave_config {Untitled 1}
+Untitled 1
+add_wave {{/tb_task2/uut/slow_en}} {{/tb_task2/uut/pc}} {{/tb_task2/uut/nextPC}} {{/tb_task2/uut/pc4}} {{/tb_task2/uut/instruction}} {{/tb_task2/uut/regWrite}} {{/tb_task2/uut/aluSrc}} {{/tb_task2/uut/memWrite}} {{/tb_task2/uut/memRead}} {{/tb_task2/uut/memToReg}} {{/tb_task2/uut/branch}} {{/tb_task2/uut/aluControlSignal}} {{/tb_task2/uut/imm}} {{/tb_task2/uut/readData1}} {{/tb_task2/uut/readData2}} {{/tb_task2/uut/writeData}} {{/tb_task2/uut/aluInput2}} {{/tb_task2/uut/aluResult}} {{/tb_task2/uut/zero}} {{/tb_task2/uut/readData}} {{/tb_task2/uut/led_val}} {{/tb_task2/uut/isJAL}} {{/tb_task2/uut/isJALR}} {{/tb_task2/uut/isLUI}} {{/tb_task2/uut/branchAddr}} {{/tb_task2/uut/branch_cond}} {{/tb_task2/uut/PCSrc}} 
+relaunch_sim
+suspend_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 1027.078 ; gain = 0.000
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Administrator/Desktop/CAPROJFINALS/taskACAPROJfinal/taskACAPROJfinal.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_task2' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/Administrator/Desktop/CAPROJFINALS/taskACAPROJfinal/taskACAPROJfinal.sim/sim_1/behav/xsim/prog.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Administrator/Desktop/CAPROJFINALS/taskACAPROJfinal/taskACAPROJfinal.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_task2_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Administrator/Desktop/CAPROJFINALS/taskACAPROJfinal/taskACAPROJfinal.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Administrator/Desktop/CAPROJFINALS/taskACAPROJfinal/taskACAPROJfinal.sim/sim_1/behav/xsim'
+"xelab -wto 4e041132423d4e0f840053b5075b9e10 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_task2_behav xil_defaultlib.tb_task2 xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto 4e041132423d4e0f840053b5075b9e10 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_task2_behav xil_defaultlib.tb_task2 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+Time	PC		Instr		LEDs	Switch
+0	xxxxxxxx	xxxxxxxx	xxxx	0005
+5000	00000000	10000113	0000	0005
+relaunch_sim: Time (s): cpu = 00:00:04 ; elapsed = 00:00:15 . Memory (MB): peak = 1027.078 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:04 ; elapsed = 00:01:15 . Memory (MB): peak = 1027.078 ; gain = 0.000
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun May  3 00:45:47 2026...

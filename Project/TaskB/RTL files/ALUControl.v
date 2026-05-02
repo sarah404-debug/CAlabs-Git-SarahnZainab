@@ -1,0 +1,109 @@
+
+//`timescale 1ns / 1ps
+
+//module ALUControl (
+//    input  [1:0] aluOp,
+//    input  [2:0] funct3,
+//    input  [6:0] funct7,
+//    output reg [3:0] aluControlSignal
+//);
+
+//    always @(*) begin
+//        case (aluOp)
+
+//            2'b00: aluControlSignal = 4'b0010; // ADD
+//            2'b01: aluControlSignal = 4'b0110; // SUB
+
+//            2'b10: begin
+//                case ({funct7, funct3})
+
+//                    10'b0000000_000: aluControlSignal = 4'b0010; // ADD
+//                    10'b0100000_000: aluControlSignal = 4'b0110; // SUB
+//                    10'b0000000_111: aluControlSignal = 4'b0000; // AND
+//                    10'b0000000_110: aluControlSignal = 4'b0001; // OR
+//                    10'b0000000_100: aluControlSignal = 4'b0011; // XOR
+//                    10'b0000000_001: aluControlSignal = 4'b0100; // SLL
+//                    10'b0000000_101: aluControlSignal = 4'b0101; // SRL
+//                    10'b0000000_010: aluControlSignal = 4'b0111; // ? SLT added
+
+//                    default: aluControlSignal = 4'b0000;
+//                endcase
+//            end
+
+//            default: aluControlSignal = 4'b0000;
+//        endcase
+//    end
+
+//endmodule
+
+
+
+
+
+
+
+
+
+
+
+
+`timescale 1ns / 1ps
+
+//module ALUControl (
+//    input  [1:0] aluOp,
+//    input  [2:0] funct3,
+//    input  [6:0] funct7,
+//    output reg [3:0] aluControlSignal
+//);
+
+//    always @(*) begin
+//        case (aluOp)
+//            2'b00: aluControlSignal = 4'b0010; // ADD (Load/Store)
+//            2'b01: aluControlSignal = 4'b0110; // SUB (Branch)
+
+//            2'b10: begin // R-type and I-type
+//                case ({funct7, funct3})
+//                    10'b0000000_000: aluControlSignal = 4'b0010; // ADD
+//                    10'b0100000_000: aluControlSignal = 4'b0110; // SUB
+//                    10'b0000000_111: aluControlSignal = 4'b0000; // AND
+//                    10'b0000000_110: aluControlSignal = 4'b0001; // OR
+//                    10'b0000000_100: aluControlSignal = 4'b0011; // XOR
+//                    10'b0000000_010: aluControlSignal = 4'b0111; // SLT
+//                    default:         aluControlSignal = 4'b0010;
+//                endcase
+//            end
+
+//            2'b11: aluControlSignal = 4'b1000; // LUI Pass-through
+
+//            default: aluControlSignal = 4'b0000;
+//        endcase
+//    end
+
+//endmodule
+
+module ALUControl (
+    input  [1:0] aluOp,
+    input  [2:0] funct3,
+    input  [6:0] funct7,
+    output reg [3:0] aluControlSignal
+);
+
+always @(*) begin
+    case (aluOp)
+
+        2'b00: aluControlSignal = 4'b0010; // ADD
+        2'b01: aluControlSignal = 4'b0110; // SUB
+
+        2'b10: begin
+            case (funct3)
+                3'b000: aluControlSignal = 4'b0010; // ADD
+                3'b010: aluControlSignal = 4'b0111; // SLT
+                default: aluControlSignal = 4'b0010;
+            endcase
+        end
+
+        default: aluControlSignal = 4'b0010;
+    endcase
+end
+
+endmodule

@@ -1,0 +1,31 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Sat May  2 23:55:26 2026
+# Process ID: 19840
+# Current directory: C:/Users/Administrator/Downloads/project_task_c/project_task_c
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12272 C:\Users\Administrator\Downloads\project_task_c\project_task_c\project_task_c.xpr
+# Log file: C:/Users/Administrator/Downloads/project_task_c/project_task_c/vivado.log
+# Journal file: C:/Users/Administrator/Downloads/project_task_c/project_task_c\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Administrator/Downloads/project_task_c/project_task_c/project_task_c.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+source tb_TopLevel.tcl
+current_wave_config {Untitled 1}
+add_wave {{/tb_TopLevel/uut/slowEnable}} {{/tb_TopLevel/uut/pc}} {{/tb_TopLevel/uut/nextPC}} {{/tb_TopLevel/uut/pc4}} {{/tb_TopLevel/uut/instruction}} {{/tb_TopLevel/uut/regWrite}} {{/tb_TopLevel/uut/aluSrc}} {{/tb_TopLevel/uut/memWrite}} {{/tb_TopLevel/uut/memRead}} {{/tb_TopLevel/uut/memToReg}} {{/tb_TopLevel/uut/branch}} {{/tb_TopLevel/uut/aluControlSignal}} {{/tb_TopLevel/uut/imm}} {{/tb_TopLevel/uut/readData1}} {{/tb_TopLevel/uut/readData2}} {{/tb_TopLevel/uut/writeData}} {{/tb_TopLevel/uut/aluInput2}} {{/tb_TopLevel/uut/aluResult}} {{/tb_TopLevel/uut/zero}} {{/tb_TopLevel/uut/readData}} {{/tb_TopLevel/uut/led_val}} {{/tb_TopLevel/uut/led_reg}} {{/tb_TopLevel/uut/isJAL}} {{/tb_TopLevel/uut/isJALR}} {{/tb_TopLevel/uut/isLUI}} {{/tb_TopLevel/uut/branchAddr}} {{/tb_TopLevel/uut/branch_cond}} {{/tb_TopLevel/uut/PCSrc}} 
+relaunch_sim
+export_ip_user_files -of_objects  [get_files C:/Users/Administrator/Downloads/project_task_c/project_task_c/project_task_c.srcs/sources_1/new/addressDecoder.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Users/Administrator/Downloads/project_task_c/project_task_c/project_task_c.srcs/sources_1/new/dataMemory.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Users/Administrator/Downloads/project_task_c/project_task_c/project_task_c.srcs/sources_1/new/leds.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Users/Administrator/Downloads/project_task_c/project_task_c/project_task_c.srcs/sources_1/new/sevenseg_basys3.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Users/Administrator/Downloads/project_task_c/project_task_c/project_task_c.srcs/sources_1/new/switches.v] -no_script -reset -force -quiet
+remove_files  {C:/Users/Administrator/Downloads/project_task_c/project_task_c/project_task_c.srcs/sources_1/new/addressDecoder.v C:/Users/Administrator/Downloads/project_task_c/project_task_c/project_task_c.srcs/sources_1/new/dataMemory.v C:/Users/Administrator/Downloads/project_task_c/project_task_c/project_task_c.srcs/sources_1/new/leds.v C:/Users/Administrator/Downloads/project_task_c/project_task_c/project_task_c.srcs/sources_1/new/sevenseg_basys3.v C:/Users/Administrator/Downloads/project_task_c/project_task_c/project_task_c.srcs/sources_1/new/switches.v}
+file delete -force C:/Users/Administrator/Downloads/project_task_c/project_task_c/project_task_c.srcs/sources_1/new/addressDecoder.v C:/Users/Administrator/Downloads/project_task_c/project_task_c/project_task_c.srcs/sources_1/new/dataMemory.v C:/Users/Administrator/Downloads/project_task_c/project_task_c/project_task_c.srcs/sources_1/new/leds.v C:/Users/Administrator/Downloads/project_task_c/project_task_c/project_task_c.srcs/sources_1/new/sevenseg_basys3.v C:/Users/Administrator/Downloads/project_task_c/project_task_c/project_task_c.srcs/sources_1/new/switches.v
+export_ip_user_files -of_objects  [get_files C:/Users/Administrator/Downloads/project_task_c/project_task_c/project_task_c.srcs/sim_1/new/tb_task1.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Users/Administrator/Downloads/project_task_c/project_task_c/project_task_c.srcs/sim_1/new/tb_task2.v] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 {C:/Users/Administrator/Downloads/project_task_c/project_task_c/project_task_c.srcs/sim_1/new/tb_task1.v C:/Users/Administrator/Downloads/project_task_c/project_task_c/project_task_c.srcs/sim_1/new/tb_task2.v}
+file delete -force C:/Users/Administrator/Downloads/project_task_c/project_task_c/project_task_c.srcs/sim_1/new/tb_task1.v C:/Users/Administrator/Downloads/project_task_c/project_task_c/project_task_c.srcs/sim_1/new/tb_task2.v
+close_sim

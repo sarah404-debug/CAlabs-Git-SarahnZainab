@@ -1,0 +1,5 @@
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+Time	PC		Instr		LEDs	Switch
+0	xxxxxxxx	xxxxxxxx	xxxx	0005
+5000	00000000	10000113	0000	0005

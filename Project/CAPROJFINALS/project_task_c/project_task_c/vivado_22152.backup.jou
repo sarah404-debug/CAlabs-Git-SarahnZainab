@@ -1,0 +1,26 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Thu Apr 30 02:17:03 2026
+# Process ID: 22152
+# Current directory: C:/Users/Administrator/Downloads/project_task_c/project_task_c
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12204 C:\Users\Administrator\Downloads\project_task_c\project_task_c\project_task_c.xpr
+# Log file: C:/Users/Administrator/Downloads/project_task_c/project_task_c/vivado.log
+# Journal file: C:/Users/Administrator/Downloads/project_task_c/project_task_c\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Administrator/Downloads/project_task_c/project_task_c/project_task_c.xpr
+update_compile_order -fileset sources_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/Users/Administrator/Downloads/project_task_c/project_task_c/project_task_c.srcs/sim_1/new/tb_TopLevel.v w ]
+add_files -fileset sim_1 C:/Users/Administrator/Downloads/project_task_c/project_task_c/project_task_c.srcs/sim_1/new/tb_TopLevel.v
+update_compile_order -fileset sim_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top tb_TopLevel [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation

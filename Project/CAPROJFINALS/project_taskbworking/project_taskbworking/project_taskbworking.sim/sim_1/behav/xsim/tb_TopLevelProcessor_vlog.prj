@@ -1,0 +1,23 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../project_taskbworking.srcs/sources_1/new/ALU.v" \
+"../../../../project_taskbworking.srcs/sources_1/new/ALUControl.v" \
+"../../../../project_taskbworking.srcs/sources_1/new/MainControl.v" \
+"../../../../project_taskbworking.srcs/sources_1/new/ProgramCounter.v" \
+"../../../../project_taskbworking.srcs/sources_1/new/RegisterFile.v" \
+"../../../../project_taskbworking.srcs/sources_1/new/TopLevelProcessor.v" \
+"../../../../project_taskbworking.srcs/sources_1/new/branchAdder.v" \
+"../../../../project_taskbworking.srcs/sources_1/new/clk_divider.v" \
+"../../../../project_taskbworking.srcs/sources_1/new/control_top.v" \
+"../../../../project_taskbworking.srcs/sources_1/new/immGen.v" \
+"../../../../project_taskbworking.srcs/sources_1/new/instructionMemory.v" \
+"../../../../project_taskbworking.srcs/sources_1/new/mux2.v" \
+"../../../../project_taskbworking.srcs/sources_1/new/pcAdder.v" \
+"../../../../project_taskbworking.srcs/sources_1/new/sevenSegDriver.v" \
+"../../../../project_taskbworking.srcs/sim_1/new/tb_TopLevelProcessor.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

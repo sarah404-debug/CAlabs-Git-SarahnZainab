@@ -1,0 +1,20 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Sat May  2 23:52:48 2026
+# Process ID: 21784
+# Current directory: C:/Users/Administrator/Desktop/CAPROJFINALS/taskACAPROJfinal
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent20504 C:\Users\Administrator\Desktop\CAPROJFINALS\taskACAPROJfinal\taskACAPROJfinal.xpr
+# Log file: C:/Users/Administrator/Desktop/CAPROJFINALS/taskACAPROJfinal/vivado.log
+# Journal file: C:/Users/Administrator/Desktop/CAPROJFINALS/taskACAPROJfinal\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Administrator/Desktop/CAPROJFINALS/taskACAPROJfinal/taskACAPROJfinal.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+source tb_task2.tcl
+current_wave_config {Untitled 1}
+add_wave {{/tb_task2/uut/slow_en}} {{/tb_task2/uut/pc}} {{/tb_task2/uut/nextPC}} {{/tb_task2/uut/pc4}} {{/tb_task2/uut/instruction}} {{/tb_task2/uut/regWrite}} {{/tb_task2/uut/aluSrc}} {{/tb_task2/uut/memWrite}} {{/tb_task2/uut/memRead}} {{/tb_task2/uut/memToReg}} {{/tb_task2/uut/branch}} {{/tb_task2/uut/aluControlSignal}} {{/tb_task2/uut/imm}} {{/tb_task2/uut/readData1}} {{/tb_task2/uut/readData2}} {{/tb_task2/uut/writeData}} {{/tb_task2/uut/aluInput2}} {{/tb_task2/uut/aluResult}} {{/tb_task2/uut/zero}} {{/tb_task2/uut/readData}} {{/tb_task2/uut/led_val}} {{/tb_task2/uut/isJAL}} {{/tb_task2/uut/isJALR}} {{/tb_task2/uut/isLUI}} {{/tb_task2/uut/branchAddr}} {{/tb_task2/uut/branch_cond}} {{/tb_task2/uut/PCSrc}} 
+relaunch_sim
+close_sim

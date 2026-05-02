@@ -1,0 +1,38 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Sat May  2 23:53:20 2026
+# Process ID: 23088
+# Current directory: C:/Users/Administrator/Downloads/project_taskbworking/project_taskbworking
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent18912 C:\Users\Administrator\Downloads\project_taskbworking\project_taskbworking\project_taskbworking.xpr
+# Log file: C:/Users/Administrator/Downloads/project_taskbworking/project_taskbworking/vivado.log
+# Journal file: C:/Users/Administrator/Downloads/project_taskbworking/project_taskbworking\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Administrator/Downloads/project_taskbworking/project_taskbworking/project_taskbworking.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+source tb_TopLevelProcessor.tcl
+current_wave_config {Untitled 1}
+add_wave {{/tb_TopLevelProcessor/uut/slow_clk}} {{/tb_TopLevelProcessor/uut/pc}} {{/tb_TopLevelProcessor/uut/nextPC}} {{/tb_TopLevelProcessor/uut/pc4}} {{/tb_TopLevelProcessor/uut/branchAddr}} {{/tb_TopLevelProcessor/uut/instruction}} {{/tb_TopLevelProcessor/uut/imm}} {{/tb_TopLevelProcessor/uut/readData1}} {{/tb_TopLevelProcessor/uut/readData2}} {{/tb_TopLevelProcessor/uut/writeData}} {{/tb_TopLevelProcessor/uut/aluInput2}} {{/tb_TopLevelProcessor/uut/aluResult}} {{/tb_TopLevelProcessor/uut/aluControlSignal}} {{/tb_TopLevelProcessor/uut/regWrite}} {{/tb_TopLevelProcessor/uut/aluSrc}} {{/tb_TopLevelProcessor/uut/memWrite}} {{/tb_TopLevelProcessor/uut/memRead}} {{/tb_TopLevelProcessor/uut/memToReg}} {{/tb_TopLevelProcessor/uut/branch}} {{/tb_TopLevelProcessor/uut/zero}} {{/tb_TopLevelProcessor/uut/branch_cond}} {{/tb_TopLevelProcessor/uut/PCSrc}} {{/tb_TopLevelProcessor/uut/display}} 
+relaunch_sim
+open_project C:/Users/Administrator/Desktop/CAPROJFINALS/taskACAPROJfinal/taskACAPROJfinal.xpr
+update_compile_order -fileset sources_1
+close_project
+export_ip_user_files -of_objects  [get_files C:/Users/Administrator/Downloads/project_taskbworking/project_taskbworking/project_taskbworking.srcs/sources_1/new/addressDecoderTop.v] -no_script -reset -force -quiet
+remove_files  C:/Users/Administrator/Downloads/project_taskbworking/project_taskbworking/project_taskbworking.srcs/sources_1/new/addressDecoderTop.v
+file delete -force C:/Users/Administrator/Downloads/project_taskbworking/project_taskbworking/project_taskbworking.srcs/sources_1/new/addressDecoderTop.v
+remove_files  C:/Users/Administrator/Downloads/project_taskbworking/project_taskbworking/project_taskbworking.srcs/sources_1/new/addressDecoderTop.v
+export_ip_user_files -of_objects  [get_files C:/Users/Administrator/Downloads/project_taskbworking/project_taskbworking/project_taskbworking.srcs/sources_1/new/addressDecoder.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Users/Administrator/Downloads/project_taskbworking/project_taskbworking/project_taskbworking.srcs/sources_1/new/dataMemory.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Users/Administrator/Downloads/project_taskbworking/project_taskbworking/project_taskbworking.srcs/sources_1/new/leds.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Users/Administrator/Downloads/project_taskbworking/project_taskbworking/project_taskbworking.srcs/sources_1/new/sevenseg_basys3.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Users/Administrator/Downloads/project_taskbworking/project_taskbworking/project_taskbworking.srcs/sources_1/new/switches.v] -no_script -reset -force -quiet
+remove_files  {C:/Users/Administrator/Downloads/project_taskbworking/project_taskbworking/project_taskbworking.srcs/sources_1/new/addressDecoder.v C:/Users/Administrator/Downloads/project_taskbworking/project_taskbworking/project_taskbworking.srcs/sources_1/new/dataMemory.v C:/Users/Administrator/Downloads/project_taskbworking/project_taskbworking/project_taskbworking.srcs/sources_1/new/leds.v C:/Users/Administrator/Downloads/project_taskbworking/project_taskbworking/project_taskbworking.srcs/sources_1/new/sevenseg_basys3.v C:/Users/Administrator/Downloads/project_taskbworking/project_taskbworking/project_taskbworking.srcs/sources_1/new/switches.v}
+file delete -force C:/Users/Administrator/Downloads/project_taskbworking/project_taskbworking/project_taskbworking.srcs/sources_1/new/addressDecoder.v C:/Users/Administrator/Downloads/project_taskbworking/project_taskbworking/project_taskbworking.srcs/sources_1/new/dataMemory.v C:/Users/Administrator/Downloads/project_taskbworking/project_taskbworking/project_taskbworking.srcs/sources_1/new/leds.v C:/Users/Administrator/Downloads/project_taskbworking/project_taskbworking/project_taskbworking.srcs/sources_1/new/sevenseg_basys3.v C:/Users/Administrator/Downloads/project_taskbworking/project_taskbworking/project_taskbworking.srcs/sources_1/new/switches.v
+export_ip_user_files -of_objects  [get_files C:/Users/Administrator/Downloads/project_taskbworking/project_taskbworking/project_taskbworking.srcs/sim_1/new/tb_task1.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Users/Administrator/Downloads/project_taskbworking/project_taskbworking/project_taskbworking.srcs/sim_1/new/tb_task2.v] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 {C:/Users/Administrator/Downloads/project_taskbworking/project_taskbworking/project_taskbworking.srcs/sim_1/new/tb_task1.v C:/Users/Administrator/Downloads/project_taskbworking/project_taskbworking/project_taskbworking.srcs/sim_1/new/tb_task2.v}
+file delete -force C:/Users/Administrator/Downloads/project_taskbworking/project_taskbworking/project_taskbworking.srcs/sim_1/new/tb_task1.v C:/Users/Administrator/Downloads/project_taskbworking/project_taskbworking/project_taskbworking.srcs/sim_1/new/tb_task2.v
+close_sim

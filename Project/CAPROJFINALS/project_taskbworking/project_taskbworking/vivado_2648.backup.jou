@@ -1,0 +1,54 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Thu Apr 30 08:34:02 2026
+# Process ID: 2648
+# Current directory: C:/Users/Administrator/Downloads/project_taskbworking/project_taskbworking
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent20348 C:\Users\Administrator\Downloads\project_taskbworking\project_taskbworking\project_taskbworking.xpr
+# Log file: C:/Users/Administrator/Downloads/project_taskbworking/project_taskbworking/vivado.log
+# Journal file: C:/Users/Administrator/Downloads/project_taskbworking/project_taskbworking\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Administrator/Downloads/project_taskbworking/project_taskbworking/project_taskbworking.xpr
+update_compile_order -fileset sources_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/Administrator/Downloads/project_taskbworking/project_taskbworking/project_taskbworking.runs/impl_1/TopLevelProcessor.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Administrator/Downloads/project_taskbworking/project_taskbworking/project_taskbworking.runs/impl_1/TopLevelProcessor.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+open_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Administrator/Downloads/project_taskbworking/project_taskbworking/project_taskbworking.runs/impl_1/TopLevelProcessor.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+close_hw_manager
+launch_simulation
+source tb_TopLevelProcessor.tcl
+current_wave_config {Untitled 1}
+add_wave {{/tb_TopLevelProcessor/uut/slow_clk}} {{/tb_TopLevelProcessor/uut/pc}} {{/tb_TopLevelProcessor/uut/nextPC}} {{/tb_TopLevelProcessor/uut/pc4}} {{/tb_TopLevelProcessor/uut/branchAddr}} {{/tb_TopLevelProcessor/uut/instruction}} {{/tb_TopLevelProcessor/uut/imm}} {{/tb_TopLevelProcessor/uut/readData1}} {{/tb_TopLevelProcessor/uut/readData2}} {{/tb_TopLevelProcessor/uut/writeData}} {{/tb_TopLevelProcessor/uut/aluInput2}} {{/tb_TopLevelProcessor/uut/aluResult}} {{/tb_TopLevelProcessor/uut/aluControlSignal}} {{/tb_TopLevelProcessor/uut/regWrite}} {{/tb_TopLevelProcessor/uut/aluSrc}} {{/tb_TopLevelProcessor/uut/memWrite}} {{/tb_TopLevelProcessor/uut/memRead}} {{/tb_TopLevelProcessor/uut/memToReg}} {{/tb_TopLevelProcessor/uut/branch}} {{/tb_TopLevelProcessor/uut/zero}} {{/tb_TopLevelProcessor/uut/branch_cond}} {{/tb_TopLevelProcessor/uut/PCSrc}} {{/tb_TopLevelProcessor/uut/display}} 
+relaunch_sim
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/Administrator/Downloads/project_taskbworking/project_taskbworking/project_taskbworking.runs/impl_1/TopLevelProcessor.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Administrator/Downloads/project_taskbworking/project_taskbworking/project_taskbworking.runs/impl_1/TopLevelProcessor.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+close_hw_manager
